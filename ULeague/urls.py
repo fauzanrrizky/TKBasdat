@@ -18,5 +18,16 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('', include('uleague.urls')),
+    path('', include('dashboard.urls')),
+    path('authentication/', include('authentication.urls')),
+    path('history_rapat/', include('history_rapat.urls')),
+    path('list_pertandingan/', include('list_pertandingan.urls')),
+    path('manage_pertandingan/', include('manage_pertandingan.urls')),
+    path('mengelola_tim/', include('mengelola_tim.urls')),
+    path('mulai_pertandingan/', include('mulai_pertandingan.urls')),
+    path('mulai_rapat/', include('mulai_rapat.urls')),
+    path('pembelian_tiket/', include('pembelian_tiket.urls')),
+    path('pembuatan_pertandingan/', include('pembuatan_pertandingan.urls')),
+    path('peminjaman_stadium/', include('peminjaman_stadium.urls')),
+
 ]

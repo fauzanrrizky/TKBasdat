@@ -1,4 +1,4 @@
 from django.shortcuts import render
 
-def index(request):
+def mengelola_tim(request):
     return render(request, 'mengelola_tim.html')

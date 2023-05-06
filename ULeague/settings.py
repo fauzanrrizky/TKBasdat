@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'authetication',
+    'authentication',
     'dashboard',
     'history_rapat',
     'list_pertandingan',
@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'mulai_rapat',
     'pembelian_tiket',
     'pembuatan_pertandingan',
+    'peminjaman_stadium'
 
 ]
 

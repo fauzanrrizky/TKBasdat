@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class ExampleAppConfig(AppConfig):
+class PembelianTiketConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
     name = 'pembelian_tiket'

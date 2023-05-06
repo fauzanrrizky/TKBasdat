@@ -1,4 +1,4 @@
 from django.shortcuts import render
 
-def index(request):
+def list_pertandingan(request):
     return render(request, 'list_pertandingan.html')
