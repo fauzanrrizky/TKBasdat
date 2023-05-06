@@ -1,4 +1,4 @@
 from django.shortcuts import render
 
-def index(request):
-    return render(request, 'index.html')
+def mulai_pertandingan(request):
+    return render(request, 'mulai_pertandingan.html')

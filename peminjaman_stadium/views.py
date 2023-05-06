@@ -1,4 +1,4 @@
 from django.shortcuts import render
 
-def index(request):
-    return render(request, 'index.html')
+def peminjaman_stadium(request):
+    return render(request, 'peminjaman_stadium.html')

@@ -1,8 +1,8 @@
 from django.urls import path
-from example_app.views import index
+from authentication.views import *
 
 app_name = 'authetication'
 
 urlpatterns = [
-    path('', index, name='index'),
+    path('', authentication, name='authentication'),
 ]

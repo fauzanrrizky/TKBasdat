@@ -1,8 +1,8 @@
 from django.urls import path
-from example_app.views import index
+from history_rapat.views import *
 
 app_name = 'history_rapat'
 
 urlpatterns = [
-    path('', index, name='index'),
+    path('', history_rapat, name='history_rapat'),
 ]

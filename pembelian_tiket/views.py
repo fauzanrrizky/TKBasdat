@@ -1,4 +1,4 @@
 from django.shortcuts import render
 
-def index(request):
-    return render(request, 'index.html')
+def pembelian_tiket(request):
+    return render(request, 'pembelian_tiket.html')
