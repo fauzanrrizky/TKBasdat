@@ -40,6 +40,16 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'authetication',
+    'dashboard',
+    'history_rapat',
+    'list_pertandingan',
+    'manage_pertandingan',
+    'mengelola_tim',
+    'mulai_pertandingan',
+    'mulai_rapat',
+    'pembelian_tiket',
+    'pembuatan_pertandingan',
+
 ]
 
 MIDDLEWARE = [
