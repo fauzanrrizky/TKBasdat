@@ -1,11 +1,167 @@
-{% extends 'base.html' %}
+{% extends 'base_manajer.html' %}
 {% load static %}
 
-{% block meta %}
-<title>Hello, world!</title>
-{% endblock meta %}
-
 {% block content %}
-  <h1>Hello, world!</h1>
-  <h3>This is example app for Django template</h3>
+
+<br></br>
+
+<body style="background-color: lightblue;">
+
+<div class="container">
+  <div class="wrapper">
+    <table class="table table-borderless" bgcolor="#C4DAFC"  width="100%">
+      <thead>
+        <tr bgcolor="#1D498C">
+          <td colspan="10" align="center"><strong>Tim</strong> </td>
+        </tr>
+
+        <!--PEMAIN-->
+        <tr bgcolor="#4E88E0">
+          <td colspan="10" align="center"><strong>Pemain</strong> </td>
+        </tr>
+
+        <tr align="center">
+          <th>Nama Pemain</th>
+          <th>No HP</th>
+          <th>Tanggal Lahir</th>
+          <th>Is Captain</th>
+          <th>Posisi</th>
+          <th>NPM</th>
+          <th>Jenjang</th>
+          <th>Action</th>
+        </tr>
+
+        <tr align="center">
+          <td>Messi</td>
+          <td>081273847339</td>
+          <td>29-11-2002</td>
+          <td>True</td>
+          <td>LW</td>
+          <td>2106654315</td>
+          <td>S1</td>
+          <td>
+            <button class="btn btn-primary" type="button">Make Captain</button>
+            <button class="btn btn-danger" type="button">Delete</button>
+          </td>
+        </tr>
+
+        <tr align="center">
+          <td>Cristiano Mubaraque</td>
+          <td>081286875005</td>
+          <td>23-10-2002</td>
+          <td>False</td>
+          <td>CB</td>
+          <td>2106651927</td>
+          <td>S1</td>
+          <td>
+            <button class="btn btn-primary" type="button">Make Captain</button>
+            <button class="btn btn-danger" type="button">Delete</button>
+          </td>
+        </tr>
+
+        <!--PELATIH-->
+        <tr bgcolor="#4E88E0">
+          <td colspan="10" align="center"><strong>Pelatih</strong> </td>
+        </tr>
+
+        <tr align="center">
+          <th>Nama Pelatih</th>
+          <th>No HP</th>
+          <th>Email</th>
+          <th>Alamat</th>
+          <th>Spesialisasi</th>
+          <th>Action</th>
+        </tr>
+
+        <tr align="center">
+          <td>Justinus Lhaksana</td>
+          <td>08111827377</td>
+          <td>Justalk@gmail.com</td>
+          <td>Jl. Perkutut, Jakarta Selatan, 12441</td>
+          <td>Taktik</td>
+          <td><button class="btn btn-danger" type="button">Delete</button></td>
+        </tr>
+
+        <tr align="center">
+          <td>Shin Tae-Young</td>
+          <td>08777652166</td>
+          <td>STY_indo@gmail.com</td>
+          <td>Beji, Depok</td>
+          <td>Taktik</td>
+          <td><button class="btn btn-danger" type="button">Delete</button></td>
+        </tr>
+
+    </table>
+  </div>
+</div>
+<br></br>
+
+<div class="d-grid gap-2 col-6 mx-auto">
+  <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#PemainPopup">Tambah Pemain</button>
+  <button class="btn btn-secondary" type="button" data-bs-toggle="modal" data-bs-target="#PelatihPopup">Tambah Pelatih</button>
+</div>
+
+
+
+<!-- Modal (PopUp) Tambah Pemain -->
+<div class="modal fade" id="PemainPopup" tabindex="-1" aria-labelledby="PemainPopup" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="PemainPopupLabel">Daftar Pemain</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div class="form-outline mb-4">
+
+            <!--DAFTARKAN PEMAIN BARU DENGAN DROPDOWN-->
+              <label for="pemain"class="form-label" for="typeEmailX-2">Pemain yang mau didaftarkan</label>
+              <form>
+                <select id="pemain" name="pemain">
+                  <option value="1">Ayub Yunus - ST</option>
+                  <option value="2">Abang Raihan - CM</option>
+                  <option value="3">Syahrul Ramadhan - RB</option>
+                </select>
+                <input type="submit">
+              </form>
+          </div>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal (PopUp) Tambah Pelatih -->
+<div class="modal fade" id="PelatihPopup" tabindex="-1" aria-labelledby="PelatihPopup" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="PelatihPopupLabel">Daftar Pemain</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div class="form-outline mb-4">
+
+            <!--DAFTARKAN PEMAIN BARU DENGAN DROPDOWN-->
+              <label for="pelatih"class="form-label" for="typeEmailX-2">Pelatih yang mau didaftarkan</label>
+              <form>
+                <select id="pelatih" name="pelatih">
+                  <option value="4">Ten Hag - Taktik</option>
+                  <option value="5">Carlo Ancelotti - Taktik</option>
+                </select>
+                <input type="submit">
+              </form>
+          </div>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+
 {% endblock content %}
