@@ -1,11 +1,75 @@
-{% extends 'base.html' %}
+{% extends 'base_panitia.html' %}
 {% load static %}
 
 {% block meta %}
-<title>Hello, world!</title>
+<head>
+  <title>Mulai Rapat</title>
+  <!-- Tambahkan stylesheet Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
 {% endblock meta %}
 
 {% block content %}
-  <h1>Hello, world!</h1>
-  <h3>This is example app for Django template</h3>
+
+
+<body>
+  <section style="background-color: #508bfc; height: 955px;">
+    <div class="container py-5 h4 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <!-- <div class="col-12 col-md-8 col-lg-6 col-xl-8"> -->
+          <div class="card shadow-2-strong" style="border-radius: 1rem;">
+            <div class="card-body p-5 text-center">
+  <div class="container mt-0 ">
+    <h1 class="mb-3">Pilih Pertandingan</h1>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Tim Bertanding</th>
+          <th>Stadium</th>
+          <th>Tanggal dan Waktu</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Tim A vs Tim B</td>
+          <td>Stadium X</td>
+          <td>10 November 2023, 18:00</td>
+          <td>
+            <a href="{% url 'mulai_rapat:rapat_pertandingan' %}">
+            <button class="btn btn-primary">Pilih</button>
+          </a>
+          </td>
+        </tr>
+        <tr>
+          <td>Tim C vs Tim D</td>
+          <td>Stadium Y</td>
+          <td>12 November 2023, 20:00</td>
+          <td>
+            <a href="{% url 'mulai_rapat:rapat_pertandingan' %}">
+              <button class="btn btn-primary">Pilih</button>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>Tim E vs Tim F</td>
+          <td>Stadium Z</td>
+          <td>15 November 2023, 19:30</td>
+          <td>
+            <a href="{% url 'mulai_rapat:rapat_pertandingan' %}">
+              <button class="btn btn-primary">Pilih</button>
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+</div>
+</div>
+</div>
+</section>
+  </div>
+</body>
+
 {% endblock content %}
