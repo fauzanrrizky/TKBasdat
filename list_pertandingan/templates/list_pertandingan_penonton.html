@@ -1,4 +1,4 @@
-{% extends 'base_manajer.html' %}
+{% extends 'base_penonton.html' %}
 {% load static %}
 
 {% block meta %}
@@ -11,23 +11,33 @@
 
 <!-- Style -->
   <style>
+
+  body {
+    margin: 0;
+    padding: 0;
+    background: url('/static/image/gambar1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+
   .judul {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 190px;
+    color: #ececff;
   }
 
   h1 {
     font-weight: bold;
   }
-    .limiter {
+  .limiter {
       width: 100%;
       margin: 0 auto
   }
 
   .container-table100 {
       width: 100%;
-      min-height: 50vh;
-      background: #ffffff;
+      min-height: 30vh;
       display: -webkit-box;
       display: -webkit-flex;
       display: -moz-box;
@@ -63,7 +73,6 @@
 }
 
 .row.header {
-    color: #fff;
     background: #6c7ae0
 }
 
@@ -186,13 +195,12 @@
 }
   </style>
 
-  <!-- Tabel History -->
-  <body>
-    <div class="judul">
-      <h1>🗒 History Rapat</h1>
-    </div>
+<body>
 
-    
+    <!-- Tabel History -->
+    <div class="judul">
+      <h1>⚽️ List Pertandingan</h1>
+    </div>
     <div class="limiter">
     <div class="container-table100">
     <div class="wrap-table100">
@@ -201,10 +209,7 @@
   <!-- Row Header -->
     <div class="row header">
     <div class="cell">
-    Rapat Tim
-    </div>
-    <div class="cell">
-    Nama panitia
+    Tim Bertanding
     </div>
     <div class="cell">
     Stadium
@@ -212,18 +217,12 @@
     <div class="cell">
     Tanggal dan Waktu
     </div>
-    <div class="cell">
-    Action
-    </div>
     </div>
 
   <!-- Row Values -->
     <div class="row">
-    <div class="cell" data-title="Rapat Tim">
+    <div class="cell" data-title="Tim Bertanding">
     A vs B
-    </div>
-    <div class="cell" data-title="Nama Panitia">
-    XYZ
     </div>
     <div class="cell" data-title="Stadium">
     Stadium GBK
@@ -231,17 +230,11 @@
     <div class="cell" data-title="Tanggal dan Waktu">
     5 Juli 2023, 07.00 - 09.00
     </div>
-    <div class="cell" data-title="Tanggal dan Waktu">
-    <a href="#">Lihat Laporan Rapat</a>
-    </div>
     </div>
 
     <div class="row">
-    <div class="cell" data-title="Rapat Tim">
+    <div class="cell" data-title="Tim Bertanding">
     C vs D
-    </div>
-    <div class="cell" data-title="Nama Panitia">
-    XYZ
     </div>
     <div class="cell" data-title="Stadium">
     Stadium GBK
@@ -249,9 +242,6 @@
     <div class="cell" data-title="Tanggal dan Waktu">
     7 Juli 2023, 13.00 - 15.00
     </div>
-    <div class="cell" data-title="Tanggal dan Waktu">
-    <a href="#">Lihat Laporan Rapat</a>
-    </div>
     </div>
 
 
@@ -259,6 +249,7 @@
     </div>
     </div>
     </div>
+
   </body>
 
 </html>
