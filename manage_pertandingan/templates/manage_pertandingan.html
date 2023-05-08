@@ -1,11 +1,177 @@
-{% extends 'base.html' %}
+{% extends 'base_manajer.html' %}
 {% load static %}
 
-{% block meta %}
-<title>Hello, world!</title>
-{% endblock meta %}
-
 {% block content %}
-  <h1>Hello, world!</h1>
-  <h3>This is example app for Django template</h3>
+
+<br></br>
+
+<body style="background-color: lightblue;">
+
+<div class="container">
+  <div class="wrapper">
+    <table class="table table-borderless" bgcolor="#C4DAFC"  width="100%">
+      <thead>
+        <tr bgcolor="#1D498C">
+          <td colspan="10" align="center"><strong>LIST PERTANDINGAN GRUP STAGE</strong> </td>
+        </tr>
+
+        <!--PERTANDINGAN GRUP-->
+        <tr bgcolor="#4E88E0">
+          <td align="center"><strong>Grup</strong></td>
+          <td align="center"><strong>Tim</strong></td>
+          <td align="center"><strong>Waktu</strong></td>
+          <td align="center"><strong>Pemenang</strong></td>
+          <td align="center"><strong>Action</strong></td>
+        </tr>
+
+        <tr align="center">
+          <td>A</td>
+          <td>A VS B</td>
+          <td>28 April 2023, 13:00</td>
+          <td>A</td>
+          <td>
+            <button class="btn btn-primary" type="button">Lihat Peristiwa Tim 1</button>
+            <button class="btn btn-danger" type="button">Lihat Peristiwa Tim 2</button>
+          </td>
+        </tr>
+
+        <tr align="center">
+          <td></td>
+          <td>C VS D</td>
+          <td>29 April 2023, 13:00</td>
+          <td>D</td>
+          <td>
+            <button class="btn btn-primary" type="button">Lihat Peristiwa Tim 1</button>
+            <button class="btn btn-danger" type="button">Lihat Peristiwa Tim 2</button>
+          </td>
+        </tr>
+        
+        <tr align="center">
+          <td></td>
+          <td>E VS F</td>
+          <td>[Waktu Dimulai -5 Menit]</td>
+          <td>-</td>
+          <td>
+            <button class="btn btn-primary" type="button">Mulai</button>
+          </td>
+        </tr>
+
+        <tr align="center">
+          <td></td>
+          <td>G VS H</td>
+          <td>31 April 2023, 13:00</td>
+          <td>-</td>
+          <td>Belum Waktunya</td>
+        </tr>
+
+        <tr align="center">
+          <td>B</td>
+          <td>U VS V</td>
+          <td>28 April 2023, 13:00</td>
+          <td>U</td>
+          <td>
+            <button class="btn btn-primary" type="button">Lihat Peristiwa Tim 1</button>
+            <button class="btn btn-danger" type="button">Lihat Peristiwa Tim 2</button>
+          </td>
+        </tr>
+
+        <tr align="center">
+          <td></td>
+          <td>W VS X</td>
+          <td>29 April 2023, 13:00</td>
+          <td>X</td>
+          <td>
+            <button class="btn btn-primary" type="button">Lihat Peristiwa Tim 1</button>
+            <button class="btn btn-danger" type="button">Lihat Peristiwa Tim 2</button>
+          </td>
+        </tr>
+        
+        <tr align="center">
+          <td></td>
+          <td>Y VS Z</td>
+          <td>[Waktu Dimulai -5 Menit]</td>
+          <td>-</td>
+          <td>
+            <button class="btn btn-primary" type="button">Mulai</button>
+          </td>
+        </tr>
+
+        <tr bgcolor="#4E88E0">
+          <td colspan="10"><button class="btn btn-primary" type="button">Finish</button></td>
+        </tr>
+
+    </table>
+  </div>
+</div>
+<br>
+
+<!-- <div class="d-grid gap-2 col-6 mx-auto">
+  <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#PemainPopup">Tambah Pemain</button>
+  <button class="btn btn-secondary" type="button" data-bs-toggle="modal" data-bs-target="#PelatihPopup">Tambah Pelatih</button>
+</div>
+
+
+
+<!-- Modal (PopUp) Tambah Pemain -->
+<div class="modal fade" id="PemainPopup" tabindex="-1" aria-labelledby="PemainPopup" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="PemainPopupLabel">Daftar Pemain</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div class="form-outline mb-4">
+
+            <!--DAFTARKAN PEMAIN BARU DENGAN DROPDOWN-->
+              <label for="pemain"class="form-label" for="typeEmailX-2">Pemain yang mau didaftarkan</label>
+              <form>
+                <select id="pemain" name="pemain">
+                  <option value="1">Ayub Yunus - ST</option>
+                  <option value="2">Abang Raihan - CM</option>
+                  <option value="3">Syahrul Ramadhan - RB</option>
+                </select><br><br>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                <button type="button" class="btn btn-primary">Simpan</button>
+              </form>
+          </div>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal (PopUp) Tambah Pelatih -->
+<div class="modal fade" id="PelatihPopup" tabindex="-1" aria-labelledby="PelatihPopup" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="PelatihPopupLabel">Daftar Pelatih</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div class="form-outline mb-4">
+
+            <!--DAFTARKAN PELATIH BARU DENGAN DROPDOWN-->
+              <label for="pelatih"class="form-label" for="typeEmailX-2">Pelatih yang mau didaftarkan</label>
+              <form>
+                <select id="pelatih" name="pelatih">
+                  <option value="4">Ten Hag - Taktik</option>
+                  <option value="5">Carlo Ancelotti - Taktik</option>
+                </select><br><br>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                <button type="button" class="btn btn-primary">Simpan</button>
+              </form>
+          </div>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+</body>
+
 {% endblock content %}
