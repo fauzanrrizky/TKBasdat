@@ -1,0 +1,161 @@
+{% extends 'base_panitia.html' %}
+{% load static %}
+
+{% block meta %}
+<head>
+  <title>List Pertandingan</title>
+  <!-- Tambahkan stylesheet Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+{% endblock meta %}
+
+{% block content %}
+
+
+<body>
+  <section style="background-color: lightblue; height: 955px;">
+    <div class="container py-5 h4 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <!-- <div class="col-12 col-md-8 col-lg-6 col-xl-8"> -->
+          <div class="card shadow-2-strong px-0" style="border-radius: 1rem;">
+            <div class="card-header text-center pt-3" style="background-color: #508bfc; ">
+              <h1 class="mb-3">List Pertandingan</h1>
+            </div>
+            <div class="card-body p-5 text-center">
+              <div class="container mt-3">
+                <div class="row">
+                  <div class="col-md-6">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th>Grup A</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Pertandingan A1</td>
+                          <td>
+                            <button class="btn btn-primary">Update</button>
+                            <button class="btn btn-danger">Delete</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Pertandingan A2</td>
+                          <td>
+                            <button class="btn btn-primary">Update</button>
+                            <button class="btn btn-danger">Delete</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="2">
+                            <button class="btn btn-success">Add Pertandingan</button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="col-md-6">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th>Grup B</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Pertandingan B1</td>
+                          <td>
+                            <button class="btn btn-primary">Update</button>
+                            <button class="btn btn-danger">Delete</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Pertandingan B2</td>
+                          <td>
+                            <button class="btn btn-primary">Update</button>
+                            <button class="btn btn-danger">Delete</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="2">
+                            <button class="btn btn-success">Add Pertandingan</button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th>Grup C</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Pertandingan C1</td>
+                          <td>
+                            <button class="btn btn-primary">Update</button>
+                            <button class="btn btn-danger">Delete</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Pertandingan C2</td>
+                          <td>
+                            <button class="btn btn-primary">Update</button>
+                            <button class="btn btn-danger">Delete</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="2">
+                            <button class="btn btn-success">Add Pertandingan</button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="col-md-6">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th>Grup D</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Pertandingan D1</td>
+                          <td>
+                            <button class="btn btn-primary">Update</button>
+                            <button class="btn btn-danger">Delete</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Pertandingan D2</td>
+                          <td>
+                            <button class="btn btn-primary">Update</button>
+                            <button class="btn btn-danger">Delete</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="2">
+                            <button class="btn btn-success">Add Pertandingan</button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+            </div>
+</div>
+</div>
+</div>
+</section>
+  </div>
+</body>
+
+{% endblock content %}
