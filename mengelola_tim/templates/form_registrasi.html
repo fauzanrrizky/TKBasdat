@@ -1,0 +1,51 @@
+{% extends 'base_manajer.html' %}
+{% load static %}
+
+{% block content %}
+
+<br></br>
+
+<body style="background-color: lightblue;">
+
+<div class="container">
+  <div class="wrapper">
+    <table class="table table-borderless"  width="100%">
+      <thead>
+        <tr bgcolor="#1D498C">
+          <td colspan="10" align="center"><strong>Tim</strong> </td>
+        </tr>
+
+        <!--Nama Tim-->
+        <tr bgcolor="#4E88E0">
+          <td> 
+            <div class="form-outline mb-4">
+                <label class="form-label" for="typeEmailX-2">Nama Tim</label>
+                <input type="text" id="typeEmailX-2" class="form-control form-control-lg" />
+              </div>
+          </td>
+        </tr>
+
+        <!--Nama Universitas-->
+        <tr bgcolor="#4E88E0">
+            <td> 
+              <div class="form-outline mb-4">
+                  <label class="form-label" for="typeEmailX-2">Nama Universitas</label>
+                  <input type="text" id="typeEmailX-2" class="form-control form-control-lg" />
+                </div>
+            </td>
+        </tr>
+
+        <!--Nama Universitas-->
+        <tr bgcolor="#4E88E0">
+            <td> 
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button class="btn btn-info" type="button">Register</button>
+                </div>
+            </td>
+        </tr>
+
+        
+
+</body>
+
+{% endblock content %}
